@@ -41,6 +41,7 @@ public class HelloWorld {
         Bird bird = new Bird();
         Bee bee = new Bee();
         ListSandbox listMachine = new ListSandbox();
+        MapSandbox mapMachine = new MapSandbox();
 
         try {
             container.fill(parsedItemCount );
@@ -65,6 +66,6 @@ public class HelloWorld {
         bird.fly();
         bee.fly();
         listMachine.createListAndPrintToConsole("Jef", "Fariba", "Bella");
-
+        System.out.printf("Here's the Map contents: %s%n", mapMachine.createMapAndPrintToConsole());
     }
 }
