@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.io.Console;
+import java.util.Set;
+import java.util.TreeSet;
 // ^^^ Java packages (io) bundle related functionality
 
 public class HelloWorld {
@@ -67,5 +69,19 @@ public class HelloWorld {
         bee.fly();
         listMachine.createListAndPrintToConsole("Jef", "Fariba", "Bella");
         System.out.printf("Here's the Map contents: %s%n", mapMachine.createMapAndPrintToConsole());
+
+
+        /**
+         * What Treehouse refers to as 'Systemizer'
+         * It just shows you info about the system you're running JVM on
+         */
+        System.out.printf("This is the classpath:  %s %n",
+            System.getProperty("java.class.path"));
+        Set<String> propNames = new TreeSet<String>(System.getProperties().stringPropertyNames());
+        for (String propertyName : propNames) {
+            System.out.printf("%s is %s %n",
+                    propertyName,
+                    System.getProperty(propertyName));
+        }
     }
 }
