@@ -11,5 +11,5 @@
 <!-- Shortcut URL to search results link: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html-->
 - You should install jEnv to handle multiple Java verions (similar to nvm for Node.js)s
 - `$ brew install jenv`
-- There's a bit of setup involved and after that's complete run `$ jenv global <java-version>` to switch versionss
+- There's a bit of setup involved and after that's complete run `$ jenv global <java-version>` to switch versions
 - For a list of available Java versions on your machine, run `$ jenv versions`.

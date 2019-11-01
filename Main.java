@@ -7,5 +7,8 @@ public class Main {
 
         System.out.println("Main class is wired up!");
         ObjectPlayground obj = new ObjectPlayground();
+
+        UserInput ui = new UserInput();
+        ui.getSomeUserInfo();
     }
 }
